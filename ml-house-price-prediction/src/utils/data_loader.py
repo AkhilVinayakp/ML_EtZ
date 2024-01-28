@@ -9,7 +9,11 @@ if TYPE_CHECKING:
     from pyspark.sql import SparkSession, DataFrame
 
 
-def file_loader(spark: SparkSession, path: str, info: Optional[bool] = False) -> DataFrame:
+def file_loader(
+        spark: SparkSession,
+        path: str,
+        info: Optional[bool] = False
+        ) -> DataFrame:
     """
     load the data from the given path and generate the info: schema,
     :param spark:
@@ -41,7 +45,10 @@ def url_loader(spark: SparkSession, path: str, local_name: str) -> DataFrame:
     TODO: bug fix. path issue.
     """
     spark.sparkContext.addFile(path)
-    df = spark.read.csv(SparkFiles.get(local_name), header=True, inferSchema=True)
+    df = spark.read.csv(
+        SparkFiles.get(local_name),
+        header=True,
+        inferSchema=True)
     print("?? Descriptive Report")
     df.describe().toPandas()
     return df
