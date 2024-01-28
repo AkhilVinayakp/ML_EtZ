@@ -29,3 +29,4 @@ class Error_info(Exception):
         l_no:int = exec_info.tb_lineno
         error_msg = f"Error in script: {f_name} in line {l_no} message:{error}."
         return error_msg
+    
