@@ -1,0 +1,8 @@
+default:
+  appName: Zendra
+
+app:
+  db:
+    url: "mongodb://localhost:27017"
+    database: "Sample"
+    collection_name: "zendra"
