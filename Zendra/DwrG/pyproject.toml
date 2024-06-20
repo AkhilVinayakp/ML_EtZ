@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "dwrg"
+version = "0.1.0"
+description = "data gathering from the source"
+authors = ["Akhil Vinayak P <nirvanaosborn@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

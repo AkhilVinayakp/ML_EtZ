@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: p-hp-vol0
+spec:
+  capacity:
+    storage: 500Mi  # 500 MiB of storage
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /mnt/data/hpdata  # Adjust the path as necessary
