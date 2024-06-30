@@ -1,0 +1,32 @@
+{
+    "employees": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "department": "Marketing",
+        "position": "Marketing Manager",
+        "salary": 60000
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "department": "Sales",
+        "position": "Sales Representative",
+        "salary": 50000
+      },
+      {
+        "id": 3,
+        "name": "Alice Johnson",
+        "department": "Engineering",
+        "position": "Software Engineer",
+        "salary": 70000
+      }
+    ],
+    "company_info": {
+      "name": "ABC Company",
+      "location": "New York",
+      "founded_year": 2000,
+      "industry": "Technology"
+    }
+  }
+  
