@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Setting up"
 
-export MONGO_URL="mongodb://Alioth.local:27017"
+export MONGO_URL="mongodb://Alioth.local"
 export COLLECTION_NAME="dev-user-data"
 export DATABASE='dev-db'
 

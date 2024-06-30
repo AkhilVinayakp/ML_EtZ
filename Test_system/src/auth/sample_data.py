@@ -4,8 +4,8 @@ from pymongo import MongoClient
 
 # Read the connection URL and database/collection names from environment variables
 mongo_url = os.getenv("MONGO_URL", "mongodb://Alioth.local")
-db_name = os.getenv("DATABASE", "dev-user-data")
-collection_name = os.getenv("COLLECTION_NAME", "COLLECTION_NAME")
+db_name = os.getenv("DATABASE", "dev-db")
+collection_name = os.getenv("COLLECTION_NAME", "dev-user-data")
 print("configurations ", mongo_url, db_name, collection_name)
 
 # Connect to MongoDB
