@@ -38,7 +38,8 @@ def login():
         if auth.username != uname or auth.password != password:
             return "invalid credentials", 401
         else:
-            return createJWT(auth.username, os.environ.get("JWT_SECRET"), True)
+            token = createJWT(auth.username, os.environ.get("JWT_SECRET"), True)
+            return jsonify({"token": token}), 200
     else:
         return "invalid credentials", 401
 

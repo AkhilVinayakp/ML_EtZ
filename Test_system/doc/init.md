@@ -16,3 +16,11 @@ Setting up virtual env. current python version 3.8
 
 - use make to execute the commands
 
+
+- Mongodb:
+Note: mongodb running on Windows host and code running on WSL2.
+networking and configuration updated.
+- firewall config updated.
+- mongo client added to WSL2
+-  mongo --host [hostIP] --port 27017 to connect to Mongodb from WSL2 terminal.
+- connection success. 
