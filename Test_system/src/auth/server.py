@@ -45,6 +45,7 @@ def login():
 
 @server.route("/validate", methods=["POST"])
 def validate():
+    # should be a bearer token,
     encoded_jwt = request.headers.get("Authorization")
 
     if not encoded_jwt:
@@ -76,4 +77,4 @@ def createJWT(username, secret, authz):
     )
 
 if __name__ == "__main__":
-    server.run(port=5000)
+    server.run(host="0.0.0.0", port=5000)
